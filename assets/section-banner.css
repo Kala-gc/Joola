@@ -1,0 +1,24 @@
+.banner-logo-main-container {
+    background-image: linear-gradient(white, grey);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 75rem;
+}
+.baner-logo-wrapper,
+.banner-section-container .banner-section,
+.banner-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+@media screen and (max-width: 749px ) {
+    .banner-logo-main-container {
+        min-height: 65rem;
+    }
+}

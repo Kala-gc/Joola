@@ -1,0 +1,213 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner_section_4Hazhy": {
+      "type": "banner-section",
+      "settings": {
+        "logo_image": "shopify://shop_images/logo-removebg-preview.png",
+        "banner_image": "shopify://shop_images/banner_image-removebg-preview_1.png"
+      }
+    },
+    "video_section_7Q36YV": {
+      "type": "video-section",
+      "settings": {
+        "heading": "BEN JHONS",
+        "heading_size": "h1",
+        "video_logo": "shopify://shop_images/perseus-logo.png",
+        "price_text": "$289.99",
+        "enable_video_looping": false,
+        "video_caption": "",
+        "caption_color": "#ffffff",
+        "video_heading": "",
+        "heading_color": "#ffffff",
+        "video_sub_heading": "",
+        "video_sub_heading_color": "#ffffff",
+        "video_button": "",
+        "button_text_color": "#54555a",
+        "content_alignment": "tw-text-center",
+        "content_position": "middle-center",
+        "video": "shopify://files/videos/joola video.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/video_cover_image.png",
+        "cover_image_mobile": "shopify://shop_images/video-mb-banner.png",
+        "description": "",
+        "full_width": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_top_mb": 36,
+        "padding_bottom_mb": 36
+      }
+    },
+    "next_gen_section_gawtGB": {
+      "type": "next-gen-section",
+      "blocks": {
+        "iamge_gallery_xnhN4r": {
+          "type": "iamge-gallery",
+          "settings": {
+            "block_image_gallery": "shopify://shop_images/gallery-d-1.jpg",
+            "block_image_gallery_mb": "shopify://shop_images/gallery-1.jpg",
+            "block_image_heading": "Carbon Framed",
+            "block_image_description": "Allows for explosive power on drives, countries, and speed ups."
+          }
+        },
+        "iamge_gallery_nRt46n": {
+          "type": "iamge-gallery",
+          "settings": {
+            "block_image_gallery": "shopify://shop_images/gallery-d-2.jpg",
+            "block_image_gallery_mb": "shopify://shop_images/gallery-image-2.jpg",
+            "block_image_heading": "Honeycomb Core",
+            "block_image_description": "Response Honeycomb Core"
+          }
+        },
+        "iamge_gallery_raHwHM": {
+          "type": "iamge-gallery",
+          "settings": {
+            "block_image_gallery": "shopify://shop_images/gallery-d-3.jpg",
+            "block_image_gallery_mb": "shopify://shop_images/gallery-3.jpg",
+            "block_image_heading": "Charged Carbon Surface",
+            "block_image_description": "Strengthens the paddle surface to provide a crispier feel & dynamic and poppier response."
+          }
+        },
+        "iamge_gallery_b6Jhzz": {
+          "type": "iamge-gallery",
+          "settings": {
+            "block_image_gallery": "shopify://shop_images/gallery-d-4_99fd4114-fde8-4cf4-aa33-d96599017218.jpg",
+            "block_image_gallery_mb": "shopify://shop_images/galley-4.jpg",
+            "block_image_heading": "Sweet Spot",
+            "block_image_description": "Specially engineered shape with a balanced configuration."
+          }
+        },
+        "iamge_gallery_ThMAgX": {
+          "type": "iamge-gallery",
+          "settings": {
+            "block_image_gallery": "shopify://shop_images/galleryd5.png",
+            "block_image_heading": "",
+            "block_image_description": ""
+          }
+        },
+        "iamge_gallery_nPPWKR": {
+          "type": "iamge-gallery",
+          "settings": {
+            "block_image_gallery": "shopify://shop_images/galleryd6.png",
+            "block_image_heading": "",
+            "block_image_description": ""
+          }
+        }
+      },
+      "block_order": [
+        "iamge_gallery_xnhN4r",
+        "iamge_gallery_nRt46n",
+        "iamge_gallery_raHwHM",
+        "iamge_gallery_b6Jhzz",
+        "iamge_gallery_ThMAgX",
+        "iamge_gallery_nPPWKR"
+      ],
+      "settings": {
+        "heading": "Next-Generation Technology",
+        "desktop_content_alignment": "center",
+        "desktop_image": "shopify://shop_images/next-gen-technology.png"
+      }
+    },
+    "featured_product_kCePAi": {
+      "type": "featured-product",
+      "blocks": {
+        "title_CUnKeT": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "text_xr63fn": {
+          "type": "text",
+          "settings": {
+            "text": "Official Paddle by #1 Ben Jhons",
+            "text_style": "subtitle"
+          }
+        },
+        "text_mYGVkR": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
+        "price_9MjdYx": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_buttons_49TWBT": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "title_CUnKeT",
+        "text_xr63fn",
+        "text_mYGVkR",
+        "price_9MjdYx",
+        "buy_buttons_49TWBT"
+      ],
+      "settings": {
+        "product": "perseus-16mm",
+        "metafield_content_title": "Paddle Specification",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "featured_collection_RRzjA4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "EXPLORE THE GEN 3 COLLECTION",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "perseus",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner_section_4Hazhy",
+    "video_section_7Q36YV",
+    "next_gen_section_gawtGB",
+    "featured_product_kCePAi",
+    "featured_collection_RRzjA4"
+  ]
+}

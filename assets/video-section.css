@@ -1,0 +1,133 @@
+.video-section__media {
+  --ratio-percent: 56.25%;
+  position: relative;
+  padding-bottom: calc(var(--ratio-percent) - var(--media-border-width));
+}
+
+/* Needed for gradient continuity with or without animation so that transparent PNG images come up as we would expect */
+.scroll-trigger:where(.gradient.video-section__media) {
+  background: transparent;
+}
+
+.video-section__media.global-media-settings--full-width {
+  padding-bottom: var(--ratio-percent);
+}
+
+.video-section__media.deferred-media {
+  box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--media-shadow-opacity));
+}
+
+.video-section__media.deferred-media:after {
+  content: none;
+}
+
+.video-section__poster.deferred-media__poster:focus {
+  outline-offset: 0.3rem;
+}
+
+.video-section__media iframe {
+  background-color: rgba(var(--color-foreground), 0.03);
+  border: 0;
+}
+
+.video-section__poster,
+.video-section__media iframe,
+.video-section__media video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.video-section__media video {
+  background: #000000;
+}
+
+.video-section__media.media-fit-cover video {
+  object-fit: cover;
+}
+
+.vedio-title-contanier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  .vedio-title-font {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  .price-wrapper {
+    font-family: "Proxima-Nova-Regular", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .btn-primary {
+    color: #1e1e1e;
+    background-color: #dff20f;
+    border-color: #dff20f;
+    font-family: "Proxima-Nova-Bold", sans-serif;
+    font-weight: 700;
+    font-size: calc(20px + (28 - 20) * (100vw - 375px) / (1440 - 375));
+    border-radius: 20px;
+    padding: 20px;
+    width: 170px;
+  }
+.video-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vedio-logo-image img {
+  max-width: 70%;
+}
+
+
+@media screen and (max-width: 749px) {
+  .vedio-logo-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .price-conatiner {
+    margin-bottom: 2rem;
+  }
+  .button-container {
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  .vedio-main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+  }
+  .video-main-wrapper {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .vedio-title-contanier {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .custom-deffered-media-space {
+    margin-top: 8rem;
+  }
+  .vedio-logo-image img {
+    max-width: 45%;
+  }
+  .price-conatiner {
+    margin-right: 5rem;
+  }
+  .btn-primary {
+    border-radius: 10px;
+    padding: 29px;
+    width: 200px;
+  }
+}

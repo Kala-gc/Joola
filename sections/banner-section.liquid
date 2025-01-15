@@ -1,0 +1,42 @@
+ {{ 'section-banner.css' |  asset_url |  stylesheet_tag }}
+<section class="banner-logo-main-container">
+  <div class="banner-logo-section">
+    <div class="baner-logo-wrapper">
+       {% if section.settings.logo_image != blank %}
+          {% render 'image', desktopSrc: section.settings.logo_image, mobileSrc: section.settings.logo_image  %}
+       {% endif %}
+    </div>
+  </div>
+ <div class="banner-section">
+    <div class="banner-section__image banner-image-container">
+      {% if section.settings.banner_image != blank %}
+        {% render 'image', desktopSrc: section.settings.banner_image, mobileSrc: section.settings.banner_image %}
+      {% comment %} <img src="{{ section.settings.banner_image | img_url: 'master' }}" height="" width="" alt="Banner image"> {% endcomment %}
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{%  schema %}
+{
+  "name": "Banner Section",
+  "class": "banner-section-container",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo_image",
+      "label": "Logo Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner Section"
+    }
+  ]
+}
+{% endschema %}

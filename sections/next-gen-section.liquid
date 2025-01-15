@@ -1,0 +1,115 @@
+{{ 'section-next-gen.css' | asset_url | stylesheet_tag }}
+
+<div class="next-gen-section-main-conatiner page-width">
+    <div class="next-gen-wrapper">
+        {% if section.settings.heading != blank %}
+            <h1 class="section-title uppercase section-text-align-{{ section.settings.desktop_content_alignment }}">
+                {{ section.settings.heading }}
+            </h1>  
+        {% endif %}
+    </div>
+    <div class="next-gen-image small-hide">
+        {% if section.settings.desktop_image != blank %}
+            {% render 'image', desktopSrc: section.settings.desktop_image, mobileSrc: section.settings.desktop_image %}
+        {% endif %}
+    </div>
+    <div class="next-gen-blocks-image-container">
+        {% for block in section.blocks %}
+            <div class="next-gen-image-items">
+                 <div class="next-gen-image-item {% if forloop.index == 3 %} image-height {%  elsif forloop.index > 4 %} small-hide medium-hide image-custom-align {% endif %}  ">
+                    {% assign mobile_image = section.settings.block_image_gallery_mb | default: section.settings.block_image_gallery %}
+                    {%  if block.settings.block_image_gallery != blank %}
+                        {% render 'image', desktopSrc: block.settings.block_image_gallery, mobileSrc: mobile_image %}
+                    {% endif %}
+                </div>
+                <div class="next-gen-content {% if forloop.index > 3 %} next-gen-block-content {% endif %}">
+                    <div class="content-wrapper">
+                        {%  if block.settings.block_image_heading != blank %} 
+                            <h3 class="net-gen-block-title uppercase">
+                                {{ block.settings.block_image_heading }}
+                            </h3> 
+                        {% endif %}
+                        {% if block.settings.block_image_description != blank %}
+                            <p class="content-description">{{ block.settings.block_image_description }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Next Generation Section",
+    "class": "next-gen-tech-main-container",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Section Title",
+            "default": "Next-Generation Technology"
+        },
+        {
+            "type": "select",
+            "id": "desktop_content_alignment",
+            "options": [
+                {
+                "value": "left",
+                "label": "Left"
+                },
+                {
+                "value": "center",
+                "label": "Center"
+                },
+                {
+                "value": "right",
+                "label": "Right"
+                }
+            ],
+            "default": "center",
+            "label": "Center"
+        },
+        {
+            "type": "image_picker",
+            "id": "desktop_image",
+            "label": "Image with description"
+        }        
+    ],
+    "blocks": [
+        {
+            "type": "iamge-gallery",
+            "name": "Image Gallery",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "block_image_gallery",
+                    "label": "Image(Desktop)"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "block_image_gallery_mb",
+                    "label": "Image(Mobile)"
+                },
+                {
+                    "type": "text",
+                    "id": "block_image_heading",
+                    "label": "Image Title",
+                    "default": "Carbon Framed"
+                },
+                {
+                    "type": "text",
+                    "id": "block_image_description",
+                    "label": "Image Description",
+                    "default": "Allows for explosive power on drives, countries, and speed ups."
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Next Generation Section"
+        }
+    ]
+}
+{% endschema %}

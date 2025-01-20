@@ -1,5 +1,11 @@
 {{ 'section-next-gen.css' | asset_url | stylesheet_tag }}
 
+{%  style %}
+  .section-title-{{ section.id }} {
+    color: {{ section.settings.heading_color}};
+  }
+{% endstyle %}
+
 <div class="next-gen-section-main-conatiner page-width">
     <div class="next-gen-wrapper">
         {% if section.settings.heading != blank %}

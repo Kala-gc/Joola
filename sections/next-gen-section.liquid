@@ -3,7 +3,7 @@
 <div class="next-gen-section-main-conatiner page-width">
     <div class="next-gen-wrapper">
         {% if section.settings.heading != blank %}
-            <h1 class="section-title uppercase section-text-align-{{ section.settings.desktop_content_alignment }}">
+            <h1 class="section-title uppercase section-text-align-{{ section.settings.desktop_content_alignment }} section-title-{{ section.id }}">
                 {{ section.settings.heading }}
             </h1>  
         {% endif %}
